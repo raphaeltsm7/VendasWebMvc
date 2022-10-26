@@ -15,6 +15,12 @@ namespace VendasWebMvc.Controllers {
         }
 
         public IActionResult Privacy() {
+            ViewData["Message"] = "Web Application MVC";
+            return View();
+        }
+
+        public IActionResult About() {
+            ViewData["Message"] = "About the Web App";
             return View();
         }
 
